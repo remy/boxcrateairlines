@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks +ExecCGI
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^assets/images/(.*)$ images.php?file=$1 [L]
+</IfModule>

@@ -1,0 +1,320 @@
+<html> 
+  <head> 
+  <title>--| Boxcrate airlines |--</title>
+  
+  <link rel="stylesheet" media="screen" type="text/css" href="css/style.css"> 
+</head> 
+<body>
+<ul id="test-menu">
+    <li><a href="#">Disable JavaScript</a></li>
+    <li><a href="#">Disable CSS 2.x</a></li>
+    <li><a href="#">Disable Images</a></li>
+    <li><a href="#">Disable CSS 3</a></li>
+  </ul>
+<div id="header">
+  <h1>Boxcrate Airlines</h1> 
+</div> 
+<div id="sidebar">
+  
+  <form id="search-form" action="form.php" method="post">
+  <h2>Flight search</h2>
+  <p>
+  <label for="flight-type">Choose flight type:</label>
+  <input class="radio" type="radio" name="flight-type" value="male">
+  One-way
+  <input class="radio" type="radio" name="flight-type" value="male" selected="selected">
+  Return
+  </p>
+  
+  <div id="outgoing-form">
+  <h3>Outgoing flight</h3>
+  <p>
+    <label for="destination">Destination:</label>
+    <input id="destination" type="text" name="destination" value="" size="">
+    <a href="#find-destination">Find destination</a>
+  </p>
+  <div class="find-destination">
+    <p>The following destinations match your destination entry above. To search for a new destination, change the destination search entry and click "Find destination" again.</p>
+    <ul class="destination-results">
+      <li>Manchester (MAN), UK</li>
+      <li>Madrid (MAD), Spain</li>
+    </ul>
+  </div>
+  
+  <p>Choose desired date:</p> 
+  
+  <label for="day">Day:</label>
+  <select class="day" name="day">
+    <option value="">Day:</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+  </select>
+  
+  <label for="month">Month:</label>
+  <select class="month" name="month">
+    <option value="">Month:</option>
+    <option value="1">Jan</option>
+    <option value="2">Feb</option>
+    <option value="3">Mar</option>
+    <option value="4">Apr</option>
+    <option value="5">May</option>
+    <option value="6">Jun</option>
+    <option value="7">Jul</option>
+    <option value="8">Aug</option>
+    <option value="9">Sep</option>
+    <option value="10">Oct</option>
+    <option value="11">Nov</option>
+    <option value="12">Dec</option>
+  </select>
+  
+  <label for="year">Year:</label>
+  <select class="year" name="year">
+    <option value="">Year:</option>
+    <option value="" selected="selected">2009</option>
+    <option value="">2010</option>
+    <option value="">2011</option>
+  </select>
+  
+  <p>Choose number of passengers:</p>
+  
+  <p><label for="adults">Adults:</label>
+  <select class="adults" name="adults">
+    <option value="0" selected="selected">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select></p>
+  
+  <p><label for="children">Children (1-14):</label>
+  <select class="children" name="children">
+    <option value="0" selected="selected">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select></p>
+  
+  <p><label for="babies">Babies (&lt; 1):</label>
+  <select class="babies" name="babies">
+    <option value="0" selected="selected">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select></p>
+  </div>
+  
+  <div id="return-form">
+  <h3>Return flight</h3>
+  <p>
+    <label for="destination">Destination:</label>
+    <input id="destination" type="text" name="destination" value="" size="">
+    <a href="#find-destination">Find destination</a>
+  </p>
+  <div class="find-destination">
+    <p>The following destinations match your destination entry above. To search for a new destination, change the destination search entry and click "Find destination" again.</p>
+    <ul class="destination-results">
+      <li>Manchester (MAN), UK</li>
+      <li>Madrid (MAD), Spain</li>
+    </ul>
+  </div>
+  
+  <p>Choose desired date:</p> 
+  
+  <label for="day">Day:</label>
+  <select class="day" name="day">
+    <option value="">Day:</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+  </select>
+  
+  <label for="month">Month:</label>
+  <select class="month" name="month">
+    <option value="">Month:</option>
+    <option value="1">Jan</option>
+    <option value="2">Feb</option>
+    <option value="3">Mar</option>
+    <option value="4">Apr</option>
+    <option value="5">May</option>
+    <option value="6">Jun</option>
+    <option value="7">Jul</option>
+    <option value="8">Aug</option>
+    <option value="9">Sep</option>
+    <option value="10">Oct</option>
+    <option value="11">Nov</option>
+    <option value="12">Dec</option>
+  </select>
+  
+  <label for="year">Year:</label>
+  <select class="year" name="year">
+    <option value="">Year:</option>
+    <option value="" selected="selected">2009</option>
+    <option value="">2010</option>
+    <option value="">2011</option>
+  </select>
+  
+  </div>
+
+        <input id="submit" name="submit" type="submit" value="Search">
+  </form>
+  </div>
+</div> 
+<div id="content">
+  <div id="content-wrapper">
+  <h2>Welcome!</h2>
+  <p>Welcome to Boxcrate airlines, serving over a million destinations worldwide! Our planes look like crates, but believe us, they are safe, and you won't find a cheaper deal anywhere else.</p>
+  <h2>Using our site</h2>
+  <p>Use the flight search form to look for a flight - once you click search, your flight results will appear below. If you need any help, you can contact us by phone, e-mail or snail mail, using the contact details in the customer support section at the foot of the page.</p>
+  <h2>Search results</h2>
+    <h3>Manchester (MAN), UK to Austin TX (AUS), USA</h3>
+    <div id="outgoing">
+      <h4>Outgoing</h4>
+      <p>First leg:</p>
+      <ul>
+        <li>Manchester (MAN), UK</li>
+        <li>September 14th 2009</li>
+        <li>11.04 am</li>
+        <li>Terminal 1</li>
+        <li>Arriving at Houston TX (HOU), USA, 2.10 pm, Terminal A</li>
+      </ul>
+      <p>Second leg:</p>
+      <ul>
+        <li>Houston TX (HOU), USA</li>
+        <li>September 14th 2009</li>
+        <li>4.35 pm</li>
+        <li>Terminal E</li>
+        <li>Arriving at Austin TX (AUS), USA, 5.20 pm, Terminal A</li>
+      </ul>
+    </div>
+    <div id="return">
+      <h4>Return</h4>
+      <p>First leg:</p>
+      <ul>
+        <li>Austin TX (AUS), USA</li>
+        <li>September 29th 2009</li>
+        <li>12.10 pm</li>
+        <li>Terminal A</li>
+        <li>Arriving at Houston TX (HOU), USA, 12.55 pm, Terminal A</li>
+      </ul>
+      <p>Second leg:</p>
+      <ul>
+        <li>Houston TX (HOU), USA</li>
+        <li>September 29th 2009</li>
+        <li>5.20 pm</li>
+        <li>Terminal E</li>
+        <li>Arriving at Manchester (MAN), UK, 7.20 am (+1 day), Terminal 1</li>
+      </ul>
+    </div>
+    </div>
+</div> 
+<div id="footer">
+<ul id="footer-menu">
+  <li><a href="#copyright">Copyright notice</a></li>
+  <li><a href="#terms">Terms and conditions</a></li>
+  <li><a href="#accessibility">Accessibility statement</a></li>
+  <li><a href="#cust-support">Customer support</a></li>
+  <li><a href="#tech-support">Website support</a></li>
+</ul>
+  <div class="footer-tab" id="copyright">
+    <h2>Copyright</h2>
+    <p>Created in 2009 by LeftMillsLogic. This web site is licensed under a <a href="#">Creative Commons non-commercial attribution license</a> - some rights reserved. Feel free to reuse this example in the name of web education, in any way you like - just give us a smile and a nod, and let people know where to find the original. Don't use it in a commercial project or otherwise profit from this code without our explicit permission. Cheers!</p>
+  </div>
+  <div class="footer-tab" id="terms">
+    <h2>Terms and conditions</h2>
+    <p>All flights are non-refundable, except in the event of a flight cancellation - once the payment goes through, your money is basically ours, bitch. Boxcrate reserves the right to change flight details at any time, without warning. Boxcrate accepts no liability for missing luggage or children.</p>
+  </div>
+  <div class="footer-tab" id="accessibility">
+    <h2>Accessibility</h2>
+    <p>This web site was created using web standards and best practices, including progressive enhancement, unobtrusive JavaScript, and a million other buzzwords. It should be usable by anyone, regardless of ability and choice of browser and operating system - we have made effort to ensure this site is accessible, and cross browser and device compatible.</p>
+  </div>
+  <div class="footer-tab" id="cust-support">
+    <h2>Customer support</h2>
+    <p>If you are having trouble finding a flight, want to ammend or cancel an existing booking, or want to make a complaint or tell us how good we are, don't hesitate to contact us in one of the following ways:</p>
+    <ul class="vcard">
+      <li class="phone"><a href="tel:441234567">Phone our customer support line on <span class="phone-number">+44 (0) 123 4567</span></a></li>
+      <li class="email"><a href="mailto:customers@boxcrate.com">E-mail our customer support address - <span class="email-address">customers@boxcrate.com</span></a>.</li>
+      <li class="snail-mail">Write to us - old school style - at <strong><span class="org">Boxcrate airlines</span>, <div class="adr"><span class="street-address">PO Box 789</span>, <span class="locality">Manchester</span>, <span class="postal-code">M1 2ET</span>, <span class="country">UK</span></div></strong></li>
+    </ul>
+  </div>
+   <div class="footer-tab" id="tech-support">
+    <h2>Website support</h2>
+    <p>If you want to report any problems with the web site, or have any comments to give us about it, feel free to <a href="mailto:webteam@boxcrate.com">e-mail our web team</a> - webteam@boxcrate.com.</p>
+  </div>
+</div>
+    
+</body> 
+</html>

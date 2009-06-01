@@ -1,0 +1,33 @@
+airport,code,country
+"Hartsfield-Jackson Atlanta",ATL,USA
+"O'Hare",ORD,USA
+"London Heathrow Airport",LHR,UK
+"Tokyo",HND,Japan
+"Los Angeles",LAX,USA
+"Dallas-Fort Worth",DFW,USA
+"Frankfurt",FRA,Germany
+"Charles De Gaulle",CDG,France
+"Schiphol Airport",AMS,The Netherlands
+"Denver",DEN,USA
+"Sky Harbor",PHX,USA
+"McCarran",LAS,USA
+"Barajas",MAD,Spain
+"George Bush Intercontinental Airport",IAH,USA
+"Hong Kong",HKG,People's Republic of China
+"Minneapolis/Saint Paul",MSP,USA
+"Detroit Metropolitan Wayne County Airport",DTW,USA
+"Don Muang",BKK,Thailand
+"San Francisco",SFO,USA
+"Miami",MIA,USA
+"John F. Kennedy",JFK,USA
+"London Gatwick Airport",LGW,UK
+"Newark Liberty",EWR,USA
+"Changi",SIN,Singapore
+"Narita",NRT,Japan
+"Beijing Capital",PEK,People's Republic of China
+"Seattle-Tacoma",SEA,USA
+"Orlando",MCO,USA
+"Toronto Pearson",YYZ,Canada
+"Lambert-Saint Louis",STL,USA
+"Manchester Airport",MAN,UK
+"Houston TX",HOU,USA

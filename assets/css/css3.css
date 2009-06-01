@@ -1,0 +1,50 @@
+/* Font import */
+
+@font-face {
+  font-family: "AeroviasBrasilNF";
+  src: url("/assets/fonts/AeroviasBrasilNF.ttf") format("truetype");
+}
+
+body {
+  o-background-size: 100% auto;
+  moz-background-size: 100% auto;
+  webkit-background-size: 100% auto;
+}
+
+h1 {
+  font-family: AeroviasBrasilNF;
+}
+
+h1, h2 {
+  text-shadow: 3px 3px 5px #333;
+}
+
+fieldset {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+form, #results-wrapper {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: #333 5px 5px 8px;
+  -moz-box-shadow: #333 5px 5px 8px;
+}
+
+form, #content-wrapper {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#footer-menu>li>a:focus, 
+#footer-menu>li>a:hover, 
+#footer-menu>li>a:active, 
+#footer-menu a.selected {
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

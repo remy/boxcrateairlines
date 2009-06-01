@@ -1,0 +1,229 @@
+/* Site wide styles */
+
+html {
+  background-color: #000000;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+/*  border: 1px solid #969;*/
+}
+
+body {
+  font-family:'Lucida Grande',Helvetica,Verdana,sans-serif; 
+  font-size: 0.8em;
+  line-height: 1.2em;
+  text-align: justify;
+  background: url(/assets/images/background.jpg) no-repeat;
+} 
+
+h1, h2, h3, h4, h5 {
+  font-family: georgia, serif;
+}
+
+h1 {
+  margin-left: 30px;
+  font-size:400%;
+  color: #FFFFFF;
+  line-height: 50px;
+}
+
+h2 { 
+  font-size:140%; 
+} 
+
+h3 { 
+  font-size:120%; 
+} 
+
+p {
+  margin-left: 5px;
+} 
+
+a:link, a:visited {
+  text-decoration: underline;
+  color: #333;
+}
+  
+a:hover, a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style-type: square;
+}
+
+/* Layout stuff */
+
+#test-menu {
+  text-align: center;
+}
+
+#test-menu>li {
+  display: inline;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 70%; 
+}
+
+#header { 
+  background: #91ACBF url(/assets/images/plane.jpg) no-repeat;
+  height: 100px;
+  border-top: 1px solid #006699;
+  border-bottom: 1px solid #006699;
+} 
+ 
+#search-results { 
+  float:right; 
+  width:50%; 
+} 
+
+#search-form-container { 
+  float:left;
+  width:50%;
+} 
+
+#footer { 
+  clear:both; 
+  padding:2% 0 0 0;
+}
+
+form, #results-wrapper {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #969;  
+}
+
+#content {
+  width: 70%;
+  padding: 10px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+
+/* Form styling stuff */
+
+#search-form-container {
+  text-align: right;
+}
+
+#sidebar li {
+  list-style-type: none;
+}
+
+/* replacement hr - last one is removed using CSS2 */
+#sidebar fieldset > ul > li {
+  margin: 10px 40px 10px 0;
+  padding-top: 10px;
+  border-top: 1px solid #969;
+}
+
+/* supported in IE7+ and other browsers */
+#sidebar fieldset > ul > li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+#sidebar fieldset ul li div {
+  margin: 12px 0;
+}
+
+hr {
+  color: #969; 
+}
+
+fieldset {
+  border: 1px solid #969;
+  margin-bottom: 10px;
+}
+
+legend {
+  background-color: #969;
+  padding: 5px;
+}
+
+#submit {
+  font-size: 1.3em;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #969;
+  background-color: #969;
+}
+
+input {
+  opacity: 0.6;
+  filter:alpha(opacity=60);
+  background-color: #969;
+/*  height: 2em;*/
+  padding: 2px;
+  font-size: 12px;
+}
+
+/* don't apply to radio or checkboxes - they become to faint */
+input[type=radio],
+input[type=checkbox] {
+  opacity: 1;
+  filter:alpha(opacity=100);
+}
+
+select {
+/*  height: 2.5em;*/
+  font-size: 12px;
+}
+
+#from-airport, #to-airport {
+  width: 15em;
+}
+
+#departure-date, #return-date {
+  width: 20em;
+}
+
+input:hover, 
+input:focus, 
+select:hover,
+select:focus {
+  opacity: 1;
+  filter:alpha(opacity=1);
+  cursor: auto;
+}
+
+/* Results styling */
+
+#search-results li {
+  line-height: 1em;
+  font-size: 85%;
+}
+
+
+/* Footer styling */
+
+.footer-tab {
+  padding: 10px 100px 10px 100px;
+  background-color: #006699;
+}
+
+#footer-menu {
+  text-align: center;
+}
+
+#footer-menu>li {
+  display: inline;
+  list-style: none;
+  font-size: 80%;
+}
+
+#footer-menu a {
+  text-decoration: none;
+  /* setting to display: block gives the user a larger click/hover area */
+  width: auto;
+  padding: 15px;
+}
+
+#footer-menu>li>a:focus, #footer-menu>li>a:hover, #footer-menu>li>a:active, #footer-menu a.selected {
+  background-color: #069;
+}
