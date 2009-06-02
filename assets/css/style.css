@@ -16,7 +16,6 @@ body {
   font-size: 0.8em;
   line-height: 1.2em;
   text-align: justify;
-  background: url(/assets/images/background.jpg) no-repeat;
 } 
 
 h1, h2, h3, h4, h5 {
@@ -30,8 +29,20 @@ h1 {
   line-height: 50px;
 }
 
+h1 a,
+h1 a:link,
+h1 a:active,
+h1 a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
 h2 { 
-  font-size:140%; 
+  font-size:160%; 
 } 
 
 h3 { 
@@ -111,29 +122,22 @@ form, #results-wrapper {
   text-align: right;
 }
 
-#sidebar li {
-  list-style-type: none;
-}
-
 /* replacement hr - last one is removed using CSS2 */
-#sidebar fieldset > ul > li {
+fieldset ul li {
+  list-style-type: none;
   margin: 10px 40px 10px 0;
   padding-top: 10px;
-  border-top: 1px solid #969;
+  border-top: 2px solid #969;
 }
 
 /* supported in IE7+ and other browsers */
-#sidebar fieldset > ul > li:first-child {
+#sidebar fieldset ul li:first-child {
   border-top: 0;
   padding-top: 0;
 }
 
 #sidebar fieldset ul li div {
   margin: 12px 0;
-}
-
-hr {
-  color: #969; 
 }
 
 fieldset {
@@ -150,7 +154,6 @@ legend {
   font-size: 1.3em;
   margin: 10px;
   padding: 5px;
-  border: 1px solid #969;
   background-color: #969;
 }
 
@@ -163,7 +166,7 @@ input {
   font-size: 12px;
 }
 
-/* don't apply to radio or checkboxes - they become to faint */
+/* don't apply to radio or checkboxes - they become too faint */
 input[type=radio],
 input[type=checkbox] {
   opacity: 1;
@@ -209,6 +212,9 @@ select:focus {
 
 #footer-menu {
   text-align: center;
+  margin: 0;
+  padding: 15px;
+  padding-bottom: 14px;
 }
 
 #footer-menu>li {

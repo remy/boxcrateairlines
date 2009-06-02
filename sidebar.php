@@ -6,6 +6,11 @@ function options($options, $selected) {
   }
 }
 
+$flight_type = array(
+  'oneway' => $user_data['flight-type'] == 'oneway' ? 'checked="checked"' : '',
+  'return' => $user_data['flight-type'] == 'return' ? 'checked="checked"' : '',
+);
+
 ?>
 
 <div id="sidebar">
@@ -16,9 +21,9 @@ function options($options, $selected) {
     <legend>Choose flight type</legend>
     <ul>
       <li>
-        <input class="radio" type="radio" name="flight-type" value="oneway" id="flight-type-one-way">
+        <input class="radio" type="radio" name="flight-type" value="oneway" id="flight-type-one-way" <?=$flight_type['oneway']?>>
         <label for="flight-type-one-way">One-way</label>
-        <input class="radio" type="radio" name="flight-type" value="return" id="flight-type-return" checked="checked">
+        <input class="radio" type="radio" name="flight-type" value="return" id="flight-type-return" <?=$flight_type['return']?>>
         <label for="flight-type-return">Return</label>
       </li>
     </ul>
@@ -92,3 +97,4 @@ function options($options, $selected) {
   </form>
 </div>
 </div>
+<div id="search-results">

@@ -6,9 +6,9 @@
 }
 
 body {
-  o-background-size: 100% auto;
-  moz-background-size: 100% auto;
-  webkit-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
 }
 
 h1, h2 {
-  text-shadow: 3px 3px 5px #333;
+  text-shadow: 3px 3px 2px #333;
 }
 
 fieldset {
@@ -27,8 +27,8 @@ fieldset {
 form, #results-wrapper {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  -webkit-box-shadow: #333 5px 5px 8px;
-  -moz-box-shadow: #333 5px 5px 8px;
+  -webkit-box-shadow: #333 8px 8px 8px;
+  -moz-box-shadow: #333 8px 8px 8px;
 }
 
 form, #content-wrapper {
@@ -37,14 +37,95 @@ form, #content-wrapper {
   border-radius: 10px;
 }
 
-#footer-menu>li>a:focus, 
-#footer-menu>li>a:hover, 
-#footer-menu>li>a:active, 
-#footer-menu a.selected {
+#footer-menu>li>a {
   -moz-border-radius-topright: 10px;
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-top-left-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #069;
+}
+
+#footer-menu>li>a:focus, 
+#footer-menu>li>a:hover, 
+#footer-menu>li>a:active, 
+#footer-menu>li>a.selected {
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media all and (max-width: 900px) {
+ 
+ #search-results { 
+    float: none;
+    width: 100%;
+  } 
+
+  #search-form-container { 
+    float: none;
+    width: 100%;
+  }
+  
+  #content {
+    width: 90%;
+  }
+  
+  .footer-tab {
+    padding: 10px;
+  }
+  
+  #footer-menu>li>a {
+    padding: 5px 5px 15px 5px;
+  }
+
+}
+
+@media all and (max-width: 760px) {
+  #footer-menu>li {
+    display: block;
+    padding: 5px 5px 12px 5px;
+    text-align: left;
+    border-color: #FFF;
+  }
+  
+  #footer-menu>li>a {
+    border: 1px solid #FFF;
+  }
+  
+}
+
+@media all and (max-device-width: 760px) {
+  #footer-menu>li {
+    display: block;
+    padding: 5px 5px 12px 5px;
+    text-align: left;
+    border-color: #FFF;
+  }
+  
+  #footer-menu>li>a {
+    border: 1px solid #FFF;
+  }
+  
+}
+
+
+@media all and (max-width: 480px) {
+  #wrapper {
+    width: 100%;
+    font-size: 85%
+  }
+  
+}
+
+@media all and (max-device-width: 480px) {
+  #wrapper {
+    width: 100%;
+    font-size: 85%;
+  }
 }

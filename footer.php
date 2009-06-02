@@ -1,3 +1,4 @@
+</div>
 <div id="footer">
 <ul id="footer-menu">
   <li><a href="#copyright">Copyright notice</a></li>

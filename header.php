@@ -14,12 +14,12 @@
 <div id="wrapper">
     
 <ul id="test-menu">
-    <li><a href="?toggle=javascript">Toggle JavaScript</a></li>
-    <li><a href="?toggle=css">Toggle all CSS</a></li>
-    <li><a href="?toggle=css3">Toggle CSS 3</a></li>
-    <li><a href="?toggle=images">Toggle Images</a></li>
+    <li><a href="?toggle=javascript">Toggle JavaScript (now: <?php echo @$_COOKIE['javascript'] == 'off' ? 'off' : 'on';?>)</a></li>
+    <li><a href="?toggle=css">Toggle all CSS (now: <?php echo @$_COOKIE['css'] == 'off' ? 'off' : 'on';?>)</a></li>
+    <li><a href="?toggle=css3">Toggle CSS 3 (now: <?php echo @$_COOKIE['css3'] == 'off' ? 'off' : 'on';?>)</a></li>
+    <li><a href="?toggle=images">Toggle Images (now: <?php echo @$_COOKIE['images'] == 'off' ? 'off' : 'on';?>)</a></li>
 </ul>
 
 <div id="header">
-  <h1>Boxcrate Airlines</h1> 
+  <h1><a href="/">Boxcrate Airlines</a></h1> 
 </div>

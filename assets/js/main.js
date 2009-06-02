@@ -21,6 +21,25 @@ jQuery(document).ready(function ($) {
 		width: 260,
 		selectFirst: false
 	});
+	
+	$('#search-form').submit(function () {
+	    var $form = $(this);
+
+	    $.ajax({
+	        url: $form.attr('action'),
+	        data: $form.serialize(),
+	        dataType: 'html',
+	        success: function (html) {
+	            $('#search-results').html(html);
+	        },
+	        error: function () {
+	            // console.log(arguments);
+	            // need to push an error in an ARIA alert box
+	        }
+	    })
+	    
+	    return false; 
+	});
 
     if (!hasWebForms2) {
         $('input.datetime_picker').blur(function () {

@@ -1,4 +1,6 @@
 <?php
+include('lib/airports.php');
+include('lib/flights.php');
 
 /**
  * Toggle logic for demo only - though could be reused for some accessiblity features
@@ -41,6 +43,7 @@ $action = @$_REQUEST['action'];
 $from_airports = array();
 $to_airports = array();
 $user_data = array(
+  'flight-type' => isset($_REQUEST['flight-type']) ? $_REQUEST['flight-type'] : 'return',
   'from-airport' => '', 
   'to-airport' => '',
   'departure-date' => @$_REQUEST['departure-date'], // can be blank
@@ -61,9 +64,7 @@ if ($user_data['return-date']) {
   $user_data['return-date'] = date($fmt, strtotime($user_data['return-date']));
 }
 
-if ($action == 'airport_lookup' || (!$ajax && $action == 'search')) {
-  include('lib/airports.php');
-  
+if ($action == 'airport_lookup' || $action == 'search') {  
   $Airports = new Airports();
   
   // manually selected overrides
@@ -114,10 +115,13 @@ if ($action == 'airport_lookup' && $ajax) {
   }
   
   include('airport_search.php');
-} else if ($action == 'search' && count($from_airports) == 1) {
+} else if ($action == 'search' && count($from_airports) == 1 && count($to_airports) == 1 && $user_data['departure-date']) {
+  
+  
   include('search.php');
 } else {
   // shows errors
+  echo 'errors - to be added';
 }
 
 if (!$ajax) {

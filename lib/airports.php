@@ -41,6 +41,17 @@ class Airports {
     return $a_title < $b_title ? -1 : 1;
   }  
   
+  function lookup($code) {
+    $code = strtolower($code);
+    foreach ($this->airports as $airport) {
+      if (strtolower($airport['code']) == $code) {
+        return $airport;
+      }
+    }
+    
+    return array(); // null
+  }
+  
   function find($str) {
     $str = strtolower($str);
     
