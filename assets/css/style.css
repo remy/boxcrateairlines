@@ -37,10 +37,6 @@ h1 a:visited {
   text-decoration: none;
 }
 
-h1 a:hover {
-  text-decoration: underline;
-}
-
 h2 { 
   font-size:160%; 
 } 
@@ -82,7 +78,7 @@ li {
 }
 
 #header { 
-  background: #91ACBF url(/assets/images/plane.jpg) no-repeat;
+  background: #86A8C1 url(/assets/images/plane.jpg) no-repeat right;
   height: 100px;
   border-top: 1px solid #006699;
   border-bottom: 1px solid #006699;
@@ -212,9 +208,6 @@ select:focus {
 
 #footer-menu {
   text-align: center;
-  margin: 0;
-  padding: 15px;
-  padding-bottom: 14px;
 }
 
 #footer-menu>li {
