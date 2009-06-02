@@ -5,12 +5,6 @@
   src: url("/assets/fonts/AeroviasBrasilNF.ttf") format("truetype");
 }
 
-body {
-  -o-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -webkit-background-size: 100% auto;
-}
-
 h1 {
   font-family: AeroviasBrasilNF;
 }
@@ -61,6 +55,22 @@ form, #content-wrapper {
 }
 
 @media all and (max-width: 900px) {
+
+#wrapper {
+    width: 100%;
+  }
+
+}
+
+@media all and (max-device-width: 900px) {
+
+#wrapper {
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 725px) {
  
  #search-results { 
     float: none;
@@ -86,46 +96,95 @@ form, #content-wrapper {
 
 }
 
-@media all and (max-width: 760px) {
-  #footer-menu>li {
-    display: block;
-    padding: 5px 5px 12px 5px;
-    text-align: left;
-    border-color: #FFF;
-  }
-  
-  #footer-menu>li>a {
-    border: 1px solid #FFF;
-  }
-  
-}
-
-@media all and (max-device-width: 760px) {
-  #footer-menu>li {
-    display: block;
-    padding: 5px 5px 12px 5px;
-    text-align: left;
-    border-color: #FFF;
-  }
-  
-  #footer-menu>li>a {
-    border: 1px solid #FFF;
-  }
-  
-}
-
-
-@media all and (max-width: 480px) {
-  #wrapper {
+@media all and (max-device-width: 725px) {
+ 
+ #search-results { 
+    float: none;
     width: 100%;
+  } 
+
+  #search-form-container { 
+    float: none;
+    width: 100%;
+  }
+  
+  #content {
+    width: 90%;
+  }
+  
+  .footer-tab {
+    padding: 10px;
+  }
+  
+  #footer-menu>li>a {
+    padding: 5px 5px 15px 5px;
+  }
+
+}
+
+
+@media all and (max-width:640px) {
+  #footer-menu>li {
+    display: block;
+    padding: 5px 5px 12px 5px;
+    text-align: left;
+    border-color: #FFF;
+  }
+  
+  #footer-menu>li>a {
+    border: 1px solid #FFF;
+  }
+  
+}
+
+@media all and (max-device-width: 640px) {
+  #footer-menu>li {
+    display: block;
+    padding: 5px 5px 12px 5px;
+    text-align: left;
+    border-color: #FFF;
+  }
+  
+  #footer-menu>li>a {
+    border: 1px solid #FFF;
+  }
+  
+}
+
+
+@media all and (max-width: 520px) {
+  #wrapper {
     font-size: 85%
   }
   
+  h1 {
+    font-size: 200%;
+  }
+  
+  #from-airport, #to-airport {
+    width: 7em;
+  }
+
+  #departure-date, #return-date {
+    width: 12em;
+  }
+
 }
 
-@media all and (max-device-width: 480px) {
+@media all and (max-device-width: 520px) {
   #wrapper {
-    width: 100%;
     font-size: 85%;
+  }
+  
+   h1 {
+    font-size: 200%;
+  }
+  
+  #from-airport, #to-airport {
+    width: 7em;
+  }
+
+  #departure-date, #return-date {
+    width: 12em;
   }
 }
