@@ -175,6 +175,13 @@ form, #content-wrapper {
     width: 12em;
   }
 
+  fieldset ul li {
+    margin-right: 0;
+  }
+  
+  fieldset ul {
+    padding-left: 0;
+  }
 }
 
 @media all and (max-device-width: 520px) {
@@ -182,7 +189,7 @@ form, #content-wrapper {
     font-size: 85%;
   }
   
-   h1 {
+  h1 {
     font-size: 200%;
   }
   
@@ -193,4 +200,13 @@ form, #content-wrapper {
   #departure-date, #return-date {
     width: 12em;
   }
+  
+  fieldset ul li {
+    margin-right: 0;
+  }
+  
+  fieldset ul {
+    padding-left: 0;
+  }
+  
 }
