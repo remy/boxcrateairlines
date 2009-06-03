@@ -35,7 +35,7 @@ $flight_type = array(
     <ul>
       <li>
           <label for="from-airport">From:</label>
-          <input class="airport-search" id="from-airport" type="text" name="from-airport" placeholder="airport leaving from" value="<?php echo $user_data['from-airport']; ?>">
+          <input class="required url airport-search" id="from-airport" required="true" type="text" name="from-airport" placeholder="airport leaving from" value="<?php echo $user_data['from-airport']; ?>">
         <?php
           $airports = $from_airports;
           $type = 'from';
@@ -44,7 +44,7 @@ $flight_type = array(
       </li>
       <li>
           <label for="to-airport">To:</label>
-          <input class="airport-search" id="to-airport" type="text" name="to-airport" placeholder="airport wish to arrive at" value="<?php echo $user_data['to-airport']; ?>">
+          <input class="required airport-search" id="to-airport" required="true" type="text" name="to-airport" placeholder="airport wish to arrive at" value="<?php echo $user_data['to-airport']; ?>">
         <?php
           $airports = $to_airports;
           $type = 'to';
@@ -53,7 +53,7 @@ $flight_type = array(
       </li>
       <li>
         <div><label for="departure-date">Departure date &amp; time:</label></div>
-        <div><input title="Format: year-month-day hh:mm" class="datetime_picker" type="datetime-local" name="departure-date" placeholder="year-month-day hh:mm" id="departure-date" value="<?php echo $user_data['departure-date']?>"></div>
+        <div><input title="Format: year-month-day hh:mm" class="required datetime datetime_picker" required="true" type="datetime-local" name="departure-date" placeholder="year-month-day hh:mm" id="departure-date" value="<?php echo $user_data['departure-date']?>"></div>
       </li>
       <li>
         <p>Number of passengers:</p>
