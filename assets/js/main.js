@@ -22,26 +22,46 @@ jQuery(document).ready(function ($) {
 		selectFirst: false
 	});
 	
-	$('#search-form').submit(function () {
+	$('#search-form').submit(function (event) {
 	    var $form = $(this);
 
-	    $.ajax({
-	        url: $form.attr('action'),
-	        data: $form.serialize(),
-	        dataType: 'html',
-	        success: function (html) {
-	            $('#search-results').html(html);
-	        },
-	        error: function () {
-	            // console.log(arguments);
-	            // need to push an error in an ARIA alert box
-	        }
-	    })
-	    
-	    return false; 
+        var proceed = true;
+        if (hasWebForms2 && typeof this.checkValidity == 'function') { // 2nd check should be redundant
+            proceed = this.checkValidity();
+        } else {
+            // FIXME - validator not working...
+            proceed = $form.valid();
+        }
+        
+        // manually build up the inputs since .serialize is skipping over the input[type=datetime_local]
+        var inputs = [];
+        $(':inputs', this).each(function () {
+            if (this.name) {
+                inputs.push(encodeURIComponent(this.name) + '=' + encodeURIComponent(this.value));                
+            }
+        });
+
+        if (proceed) {
+    	    $.ajax({
+    	        url: $form.attr('action'),
+    	        data: inputs.join('&'),
+    	        dataType: 'html',
+    	        success: function (html) {
+    	            $('#search-results').html(html);
+    	        },
+    	        error: function () {
+    	            // console.log(arguments);
+    	            // need to push an error in an ARIA alert box
+    	        }
+    	    });            
+        }
+
+        return false;
 	});
 
     if (!hasWebForms2) {
+        $('#search-form').validate(); // KISS
+        
         $('input.datetime_picker').blur(function () {
     	    var $input = $(this);
     	    var date = Date.parse($input.val());

@@ -38,6 +38,7 @@
 <?php if ($toggles['javascript']) : ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script src="assets/js/jquery.autocomplete.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
 <script src="assets/js/date.js" type="text/javascript"></script>
 <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
 <?php endif ?>
