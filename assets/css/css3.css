@@ -7,11 +7,17 @@
 
 h1 {
   font-family: AeroviasBrasilNF;
-}
-
-h1, h2 {
   text-shadow: 3px 3px 2px #333;
 }
+
+h2 {
+  text-shadow: 3px 3px 3px #aaa;
+}
+
+#footer h2 {
+  text-shadow: 1px 1px 1px #999;
+}
+
 
 fieldset {
   -moz-border-radius: 10px;
